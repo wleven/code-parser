@@ -1,0 +1,157 @@
+[
+  {
+    "path": "E:\\project\\olsl-back\\src\\utils\\error-log.js",
+    "imports": [
+      {
+        "sourcePath": "E:\\project\\olsl-back\\src\\utils\\vue",
+        "specifiers": [{ "type": "ImportDefaultSpecifier", "value": "Vue" }]
+      },
+      {
+        "sourcePath": "E:\\project\\olsl-back\\src\\store",
+        "specifiers": [{ "type": "ImportDefaultSpecifier", "value": "store" }]
+      },
+      {
+        "sourcePath": "E:\\project\\olsl-back\\src\\utils\\validate",
+        "specifiers": [
+          { "type": "ImportSpecifier", "value": "isArray" },
+          { "type": "ImportSpecifier", "value": "isString" }
+        ]
+      },
+      {
+        "sourcePath": "E:\\project\\olsl-back\\src\\settings",
+        "specifiers": [
+          { "type": "ImportDefaultSpecifier", "value": "settings" }
+        ]
+      }
+    ],
+    "functions": [{ "name": "checkNeed", "call": ["isString", "isArray"] }]
+  },
+  {
+    "path": "E:\\project\\olsl-back\\src\\utils\\index.js",
+    "imports": [
+      {
+        "sourcePath": "E:\\project\\olsl-back\\src\\utils\\element-ui",
+        "specifiers": [{ "type": "ImportSpecifier", "value": "Message" }]
+      },
+      {
+        "sourcePath": "E:\\project\\olsl-back\\src\\store",
+        "specifiers": [{ "type": "ImportDefaultSpecifier", "value": "store" }]
+      }
+    ],
+    "functions": [
+      { "name": "CloseTagsView", "call": ["cb"] },
+      { "name": "FormatResponseMsg", "call": ["Message"] },
+      { "name": "exportDownload", "call": ["decodeURIComponent"] },
+      { "name": "Percentage2Value", "call": ["parseFloat"] },
+      { "name": "Value2Percentage", "call": ["parseFloat"] },
+      { "name": "throttle", "call": ["clearTimeout", "setTimeout"] }
+    ]
+  },
+  {
+    "path": "E:\\project\\olsl-back\\src\\utils\\menu.js",
+    "imports": [
+      {
+        "sourcePath": "E:\\project\\olsl-back\\src\\layout",
+        "specifiers": [{ "type": "ImportDefaultSpecifier", "value": "Layout" }]
+      },
+      {
+        "sourcePath": "E:\\project\\olsl-back\\src\\views\\pageRouteView",
+        "specifiers": [
+          { "type": "ImportDefaultSpecifier", "value": "PageRouteView" }
+        ]
+      }
+    ],
+    "functions": [
+      { "name": "getMenus", "call": ["getRouter"] },
+      {
+        "name": "getRouter",
+        "call": [
+          "getRouteName",
+          "getRouteName",
+          "loadView",
+          "fn",
+          "loadView",
+          "fn"
+        ]
+      }
+    ]
+  },
+  {
+    "path": "E:\\project\\olsl-back\\src\\utils\\upload.js",
+    "imports": [
+      {
+        "sourcePath": "E:\\project\\olsl-back\\src\\utils\\element-ui",
+        "specifiers": [{ "type": "ImportSpecifier", "value": "Message" }]
+      }
+    ],
+    "functions": [
+      { "name": "imageCheck", "call": ["checkFileSize", "checkFileType"] },
+      { "name": "videoCheck", "call": ["checkFileSize", "checkFileType"] }
+    ]
+  },
+  {
+    "path": "E:\\project\\olsl-back\\src\\utils\\validate.js",
+    "imports": [
+      {
+        "sourcePath": "E:\\project\\olsl-back\\src\\api\\utils\\utils",
+        "specifiers": [
+          { "type": "ImportSpecifier", "value": "creditCodeUniqueCheck" },
+          { "type": "ImportSpecifier", "value": "phoneUniqueCheck" },
+          { "type": "ImportSpecifier", "value": "staffPhoneUniqueCheck" }
+        ]
+      }
+    ],
+    "functions": [
+      {
+        "name": "validEmail",
+        "call": ["callback", "callback", "callback", "callback"]
+      },
+      {
+        "name": "validatePhone",
+        "call": ["callback", "callback", "callback", "callback"]
+      },
+      {
+        "name": "validatePhoneRequest",
+        "call": [
+          "callback",
+          "callback",
+          "phoneUniqueCheck",
+          "callback",
+          "callback",
+          "callback"
+        ]
+      },
+      { "name": "validateTelAndPhone", "call": ["callback", "callback"] },
+      {
+        "name": "validateStaffPhoneRequest",
+        "call": [
+          "callback",
+          "callback",
+          "staffPhoneUniqueCheck",
+          "callback",
+          "callback",
+          "callback"
+        ]
+      },
+      {
+        "name": "validateCreditCodeRequest",
+        "call": [
+          "callback",
+          "callback",
+          "creditCodeUniqueCheck",
+          "callback",
+          "callback",
+          "callback"
+        ]
+      },
+      {
+        "name": "validateIdCard",
+        "call": ["callback", "callback", "callback", "callback"]
+      },
+      {
+        "name": "validateForm",
+        "call": ["resolve", "resolve", "resolve", "resolve"]
+      }
+    ]
+  }
+]
