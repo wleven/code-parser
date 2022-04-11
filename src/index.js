@@ -7,6 +7,10 @@ const path = require("path");
 const utils = require("./utils");
 const fs = require("fs");
 
+try {
+  fs.mkdirSync("./src/file");
+} catch (error) {}
+
 /** 别名 */
 const alias = {
   "@": "E:\\project\\olsl-back\\src",
